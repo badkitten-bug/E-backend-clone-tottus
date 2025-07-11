@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_shared_product_blocks",
+    "info": {
+        "displayName": "ProductBlock"
+    },
+    "options": {},
+    "attributes": {
+        "custom_title": {
+            "type": "string"
+        },
+        "label": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}
