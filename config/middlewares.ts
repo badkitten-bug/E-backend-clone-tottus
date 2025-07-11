@@ -11,7 +11,7 @@ export default [
         // agrega aquí otros dominios si los necesitas
       ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-      headers: '*',
+      headers: ['*'],
       keepHeaderOnError: true,
     },
   },
