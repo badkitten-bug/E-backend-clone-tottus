@@ -6,9 +6,7 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: process.env.NODE_ENV === 'production' 
-        ? ['https://tu-frontend-domain.com', 'https://e-backend-clone-tottus.onrender.com']
-        : ['http://localhost:3000', 'http://localhost:1337', 'https://e-backend-clone-tottus.onrender.com'],
+      origin: ['*'], // Permite cualquier origen
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
       headers: '*',
       keepHeaderOnError: true,
