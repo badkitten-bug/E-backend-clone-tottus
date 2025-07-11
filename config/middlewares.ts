@@ -5,7 +5,11 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['*'], // Permite cualquier origen
+      origin: [
+        'http://localhost:3000', // para desarrollo local
+        'https://frontend-clone-totus-git-master-steves-projects-9398f8a1.vercel.app/', // tu dominio de producción
+        // agrega aquí otros dominios si los necesitas
+      ],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
       headers: '*',
       keepHeaderOnError: true,
